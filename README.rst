@@ -38,9 +38,7 @@ If package is installed, go ahead and type the following in the console else jus
 
 .. code:: console
 
-   $ python -m melancholic --src IMAGE_PATH
-
-this will output if the image in the IMAGE_PATH, if exists, has a skin lesion which is benign or cancerous.
+   $ python -m isic_dataset_downloader
 
 
 The dataset will be acquired from |ISIC_link|'s Task 3.
