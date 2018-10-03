@@ -1,0 +1,7 @@
+__name__ = "isic_dataset_downloader"
+__version__ = "0.0.1"
+__url__ = "https://github.com/gavindsouza/isic_dataset_downloader.git"
+__author__ = r"Gavin D'souza"
+__email__ = "gavin18d@gmail.com"
+__description__ = r"Micro tool for downloading ISIC's dataset"
+__license__ = "MIT"
