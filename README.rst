@@ -1,6 +1,6 @@
 ISIC Dataset Downloader
 ==================================================
-*"Just a simple script to download and extract the ISIC dataset"*
+*"Just a micro tool to download, extract and segregate the ISIC dataset!"*
 
 Table of Contents
 ~~~~~~~~~~~~~~~~~
