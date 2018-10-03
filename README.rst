@@ -1,9 +1,12 @@
 ISIC Dataset Downloader
 ==================================================
 *"Just a micro tool to download, extract and segregate the ISIC dataset!"*
+<<<<<<< HEAD
 
 Had made this for my project, if this helps you, then that's great!
 
+=======
+>>>>>>> isic_dataset_downloader/master
 
 Table of Contents
 ~~~~~~~~~~~~~~~~~
