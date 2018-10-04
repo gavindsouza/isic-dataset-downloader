@@ -30,11 +30,12 @@ if __name__ == "__main__":
                         help="this option enables downloading"
                         )
 
-    parser.add_argument("-x", "--",
+    parser.add_argument("-x", "--segregate",
                         action="store_true",
                         help="tell me if you want me to segregate the images after downloading the dataset"
                         )
 
+    # this doesn't work, find out why
     parser.add_argument("-s", "--src",
                         action="store_true",
                         help="tell me where you want me to download the dataset to"
@@ -44,7 +45,7 @@ if __name__ == "__main__":
                         action="version",
                         version=__version__
                         )
-    args, _ = parser.parse_known_args()
+    args = parser.parse_args()
 
     if args.download:
         getDataset()
