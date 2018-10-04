@@ -5,15 +5,6 @@ from zipfile import ZipFile
 # imports - third party imports
 from requests import get
 
-img_file_links = {
-    "train": {
-        "images": r"https://challenge.kitware.com/api/v1/item/5ac20fc456357d4ff856e139/download",
-        "truth-table": r"https://challenge.kitware.com/api/v1/item/5ac20eeb56357d4ff856e136/download"
-    },
-    "test": r"https://challenge.kitware.com/api/v1/item/5b1c200656357d41064da305/download",
-    "validate": r"https://challenge.kitware.com/api/v1/item/5b1c1c7256357d41064da302/download"
-}
-
 
 def __extract__(dataset_name):
     # ZIP FILES ONLY!!!
@@ -34,7 +25,3 @@ def __download_file__(url):
                 f.write(chunk)
                 # f.flush() commented by recommendation from J.F.Sebastian
     return local_filename
-
-
-def getDataset():
-    print("this is the main function which has to be linked")

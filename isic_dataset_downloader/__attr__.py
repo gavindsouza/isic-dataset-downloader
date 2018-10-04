@@ -1,5 +1,5 @@
 __pkgname__ = "isic_dataset_downloader"
-__version__ = "0.2.0"
+__version__ = "1.0"
 __url__ = "https://github.com/gavindsouza/isic_dataset_downloader.git"
 __author__ = r"Gavin D'souza"
 __email__ = "gavin18d@gmail.com"
