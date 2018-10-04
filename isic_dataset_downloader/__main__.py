@@ -30,7 +30,7 @@ if __name__ == "__main__":
                         help="this option enables downloading"
                         )
 
-    parser.add_argument("-x", "--segregate",
+    parser.add_argument("-x", "--",
                         action="store_true",
                         help="tell me if you want me to segregate the images after downloading the dataset"
                         )
