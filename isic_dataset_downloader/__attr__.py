@@ -1,4 +1,4 @@
-__name__ = "isic_dataset_downloader"
+__pkgname__ = "isic_dataset_downloader"
 __version__ = "0.0.1"
 __url__ = "https://github.com/gavindsouza/isic_dataset_downloader.git"
 __author__ = r"Gavin D'souza"

@@ -3,12 +3,13 @@ import argparse
 import sys
 
 # imports - module imports
-from isic_dataset_downloader.__attr__ import __name__, __description__, __version__
+from isic_dataset_downloader.__attr__ import __pkgname__, __description__, __version__
 
 USAGE_INSTR = ("\nIf args are not parsed app will exit"
                "\nThe bare minimum for its usage is as:"
                "\n{} -D -x -s 'DOWNLOAD_PATH'"
-               "\nFor further help see --help or -h").format(__name__)
+               "\nFor further help see --help or -h"
+               "\n").format(__pkgname__)
 
 
 def get_parser():
@@ -44,6 +45,7 @@ if __name__ == "__main__":
     code = 0
     parser = get_parser()
     args, _ = parser.parse_known_args()
+    print(USAGE_INSTR)
     """
     download()
     segregate()
