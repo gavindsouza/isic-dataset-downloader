@@ -1,9 +1,13 @@
 # imports - standard imports
 import argparse
+import os
 import sys
 
 # imports - module imports
 from isic_dataset_downloader.__attr__ import __pkgname__, __description__, __version__
+from isic_dataset_downloader.data import getDataset
+# imports - module imports
+from isic_dataset_downloader.data import segregate
 
 USAGE_INSTR = ("\nIf args are not parsed app will exit"
                "\nThe bare minimum for its usage is as:"
@@ -12,14 +16,17 @@ USAGE_INSTR = ("\nIf args are not parsed app will exit"
                "\n").format(__pkgname__)
 
 
-def get_parser():
+if __name__ == "__main__":
+    code = 0
+
     parser = argparse.ArgumentParser(
         description=__description__ + USAGE_INSTR
 
     )
-    parser.parse_args()
+
     parser.add_argument("-D", "--download",
                         action="store_true",
+                        default=os.path.dirname(os.path.realpath(__file__)),
                         help="this option enables downloading"
                         )
 
@@ -37,17 +44,12 @@ def get_parser():
                         action="version",
                         version=__version__
                         )
-
-    return parser
-
-
-if __name__ == "__main__":
-    code = 0
-    parser = get_parser()
     args, _ = parser.parse_known_args()
-    print(USAGE_INSTR)
-    """
-    download()
-    segregate()
-    """
+
+    if args.download:
+        getDataset()
+
+    if args.segregate:
+        segregate()
+
     sys.exit(code)

@@ -1,1 +1,2 @@
+from isic_dataset_downloader.data.download import getDataset
 from isic_dataset_downloader.data.segregate import segregate
