@@ -20,8 +20,8 @@ Clone the git repository:
 
 .. code:: console
 
-   $ git clone https://github.com/gavindsouza/isic_dataset_downloader.git
-   $ cd isic_dataset_downloader
+   $ git clone https://github.com/gavindsouza/isic-dataset-downloader.git
+   $ cd isic-dataset-downloader
 
 Install necessary dependencies
 
